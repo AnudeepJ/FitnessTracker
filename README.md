@@ -16,6 +16,10 @@ Backend Execution:
 cd backend
 npm run dev
 
+For Login : 
+username : john_doe
+password : securepassword123
+
 
 
     1. Log - (Workout, Food, and Water Log)
