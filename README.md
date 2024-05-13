@@ -6,7 +6,6 @@ Unleash your fitness potential with FitFreaks! This user-friendly application ca
 Node is installed. 
     .env for backend
 PORT=4000
-MONGODB_URI=mongodb+srv://2023mt93144:abcd1234@fitnesstracker.uhv5w53.mongodb.net/?retryWrites=true&w=majority&appName=FitnessTracker
 
 .env for frontend
 REACT_APP_API_KEY_NINJA=Rd/D2sdqmcFxbIQ0wanWsw==LC3HtPk5jK0qXs3P
