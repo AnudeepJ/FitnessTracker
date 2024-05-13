@@ -7,8 +7,10 @@ Node is installed.
     .env for backend
 PORT=4000
 
-.env for frontend
-REACT_APP_API_KEY_NINJA=Rd/D2sdqmcFxbIQ0wanWsw==LC3HtPk5jK0qXs3P
+Frontend Execution :
+cd frontend
+yarn dev    
+
 
 Backend Execution: 
 cd backend
