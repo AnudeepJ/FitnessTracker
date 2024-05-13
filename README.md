@@ -3,6 +3,18 @@
 Unleash your fitness potential with FitFreaks! This user-friendly application caters to individuals seeking a robust workout tracking and progress monitoring tool. Whether you're a seasoned gym-goer or just starting your fitness journey, FitFreaks helps you stay on top of your workouts, visualize your progress, and maintain motivation. Log various exercises, view workout history, and leverage features designed to keep you engaged on your path to achieving your fitness goals.
 
 
+Node is installed. 
+    .env for backend
+PORT=4000
+MONGODB_URI=mongodb+srv://2023mt93144:abcd1234@fitnesstracker.uhv5w53.mongodb.net/?retryWrites=true&w=majority&appName=FitnessTracker
+
+.env for frontend
+REACT_APP_API_KEY_NINJA=Rd/D2sdqmcFxbIQ0wanWsw==LC3HtPk5jK0qXs3P
+
+Backend Execution: 
+cd backend
+npm run dev
+
 
 
     1. Log - (Workout, Food, and Water Log)
