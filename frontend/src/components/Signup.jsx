@@ -54,19 +54,29 @@ function Signup({updateSignUpText, signUpText, loggedIn, setLoggedIn, signInText
       console.log('User data:', userData); //Saving data
       // console.log(userData.age);
       // console.log(typeof(userData.age));
-      try{
-        const response = await api.post('/api/userGet', JSON.stringify(userData))
-        if (response.ok) {
+      try {
+        const response = await api.post('/api/userGet', JSON.stringify(userData), {
+          headers: {
+            'Content-Type': 'application/json' // Ensure the content type is set for JSON
+          }
+        });
+      
+        console.log('Response:', response); // Log full response for detailed debugging
+      
+        if (response.status === 201) {
           console.log('Data submitted successfully');
-        } else {
-          console.error('Failed to submit data');
+        } else if (response.status === 409) {
+          console.error('Username is already taken');
           alert("Username is already taken.");
           setUsername('');
-          return;
+          document.getElementById('usernameInput').focus(); // Focus on the username input after reset
+        } else {
+          console.error('Failed to submit data:', response.status, response.statusText);
+          alert("An error occurred. Please try again.");
         }
       } catch (error) {
         console.error('Error submitting data:', error);
-        return;
+        alert("Failed to connect to the server. Please check your network connection.");
       }
       updateUserDetails(userData);
       // console.table(userData);
