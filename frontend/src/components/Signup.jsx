@@ -64,7 +64,7 @@ function Signup({updateSignUpText, signUpText, loggedIn, setLoggedIn, signInText
         console.log('Response:', response); // Log full response for detailed debugging
       
         if (response.status === 201) {
-          console.log('Data submitted successfully');
+          console.log('Data submitted successfully ');
         } else if (response.status === 409) {
           console.error('Username is already taken');
           alert("Username is already taken.");
