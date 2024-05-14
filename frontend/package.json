@@ -29,7 +29,8 @@
     "build": "vite build",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rimraf ./dist"
   },
   "eslintConfig": {
     "extends": [
